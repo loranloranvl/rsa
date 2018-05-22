@@ -1,10 +1,10 @@
-# rsa
-rsa algorithm for learning cryptography
-written in nodejs
+# RSA
+RSA algorithm for learning cryptography
+Written in nodejs
 
 ## Usage
 `node server.js`
-visit localhost:3000
+Visit localhost:3000
 
-### reference
+### Reference
 https://en.wikipedia.org/wiki/RSA_(cryptosystem)
