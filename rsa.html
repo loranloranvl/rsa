@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RSA</title>
+	<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+	<link rel="stylesheet" href="./rsa.css">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+	<script src="./main.js"></script>
+</head>
+<body>
+	<h1>RSA Algorithm</h1>
+	<div id="main">
+		<label for="inp">明文</label>
+		<input class="i1" type="text" id="inp"><br><br>
+		<label for="inc">密文</label>
+		<input class="i1" type="text" id="inc"><br><br>
+		<label for="keysize">密钥长度</label>
+		<select data-am-selected id="keysize">
+			<option value="128">128 位密钥</option>
+			<option value="256">256 位密钥</option>
+			<option value="512">512 位密钥</option>
+			<option value="1024">1024 位密钥</option>
+		</select>
+		<button id= "keygen" class="am-btn am-btn-secondary">生成密钥</button>
+		<span class="time"></span>
+		<br><br>
+		<label for="keye">公钥 e</label>
+		<input class="i1" type="text" id="keye"><br><br>
+		<label class="" for="keyd">私钥 d</label>
+		<input class="i1" type="text" id="keyd"><br><br>
+		<label class="" for="keyn">私钥 n</label>
+		<input class="i1" type="text" id="keyn"><br><br>
+		<div id="btndiv">
+			<button class="am-btn am-btn-secondary" id="enc">开始加密</button>
+			<button class="am-btn am-btn-secondary" id="dec">开始解密</button>
+		</div>
+		<p id="console"></p>
+	</div>
+</body>
+</html>
